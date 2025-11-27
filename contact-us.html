@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us – We’re Here to Help</title>
+
+    <!-- Bootstrap CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <style>
+        body{
+            background: linear-gradient(120deg, #a8edea, #fed6e3);
+            font-family: Arial, sans-serif;
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+        }
+
+        .contact-box{
+            background: rgba(255, 255, 255, 0.7);
+            padding: 40px;
+            border-radius: 15px;
+            backdrop-filter: blur(10px);
+            box-shadow: 0px 4px 20px rgba(0,0,0,0.1);
+            max-width: 500px;
+            width: 100%;
+        }
+
+        h2{
+            color: #333;
+            text-align: center;
+            margin-bottom: 20px;
+            font-weight: bold;
+        }
+
+        p{
+            text-align: left;
+            font-size: 1rem;
+            color: #555;
+            margin-bottom: 20px;
+
+        }
+    </style>
+</head>
+<body>
+
+    <div class="contact-box">
+        <h2>Contact Us</h2>
+        <p>If you're feeling stressed or anxious, feel free to reach out. We are happy to Help  
+        We’re here to support you.</p>
+
+        <form>
+            <div class="mb-3">
+                <label class="form-label">Your Full Name</label>
+                <input type="text" class="form-control" placeholder="Enter your name" required>
+            </div>
+
+            <div class="mb-3">
+                <label class="form-label">Your Email</label>
+                <input type="email" class="form-control" placeholder="Enter your email" required>
+            </div>
+
+            <div class="mb-3">
+                <label class="form-label">What are you struggling with?</label>
+                <select class="form-select" required>
+                    <option value="">Choose an option</option>
+                    <option>Academic stress</option>
+                    <option>Exam anxiety</option>
+                    <option>Personal pressure</option>
+                    <option>Focus/Concentration issues</option>
+                    <option>Lack of motivation</option>
+                    <option>Something else</option>
+                </select>
+            </div>
+
+            <div class="mb-3">
+                <label class="form-label">Your Message</label>
+                <textarea class="form-control" rows="4" placeholder="Tell us what you feel... (optional)"></textarea>
+            </div>
+
+            <button type="submit" class="btn btn-primary w-100" 
+                style="background:#6c63ff;border:none;">
+                Send Message
+            </button>
+            <br>
+            <p class="fw-bold">FIND US</p>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3721.4351378928236!2d79.07234197924575!3d21.135074630367196!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bd4c19eafc71f75%3A0x27c2f70062dbe784!2sSynapse%20Mind%20Care!5e0!3m2!1sen!2sin!4v1764243329372!5m2!1sen!2sin" width="450" height="250" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </form>
+    </div>
+
+</body>
+</html>

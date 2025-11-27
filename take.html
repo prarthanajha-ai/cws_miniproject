@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Breathing Exercise</title>
+
+
+<style>
+    body {
+        margin: 0;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background: linear-gradient(135deg, #dce8ff, #f4f7ff);
+        font-family: "Poppins", sans-serif;
+    }
+
+    .box {
+        text-align: center;
+    }
+
+    .circle {
+        width: 180px;
+        height: 180px;
+        background: rgba(173, 216, 255, 0.5);
+        border-radius: 50%;
+        margin: auto;
+        animation: breathe 7s infinite;
+        box-shadow: 0px 0px 20px rgba(100, 150, 255, 0.4);
+    }
+
+    @keyframes breathe {
+        0% { transform: scale(0.7); }
+        30% { transform: scale(1.1); }   /* Breathe In */
+        60% { transform: scale(1.1); }   /* Hold */
+        100% { transform: scale(0.7); }  /* Breathe Out */
+    }
+
+    .text {
+        margin-top: 25px;
+        font-size: 28px;
+        font-weight: 600;
+        color: #3c4b70;
+        animation: textchange 7s infinite;
+    }
+
+    @keyframes textchange {
+        0% { content: "Breathe In"; }
+        0%, 30% { opacity: 1; }
+        31%, 60% { opacity: 1; }
+        61%, 100% { opacity: 1; }
+    }
+
+    /* Fake text-swap using opacity layers */
+    .text:after {
+        content: "Breathe In";
+        animation: breathingText 7s infinite;
+    }
+
+    @keyframes breathingText {
+        0%   { content: "Breathe In"; }
+        30%  { content: "Hold"; }
+        60%  { content: "Breathe Out"; }
+        100% { content: "Breathe In"; }
+    }
+</style>
+
+
+</head>
+
+<body>
+
+
+<div class="box">
+    <div class="circle"></div>
+    <div class="text"></div>
+</div>
+
+</html>
